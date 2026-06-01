@@ -4,13 +4,7 @@ opcion = 0
 
 while opcion != 4:
 
-    print("\n--- LISTA DE COMPRAS ---")
-    print("1. Agregar ítem")
-    print("2. Eliminar ítem")
-    print("3. Ver lista completa")
-    print("4. Salir")
-
-    opcion = int(input("Seleccione una opción: "))
+    opcion = int(input("\n--- LISTA DE COMPRAS --- \n1. Agregar ítem \n2. Eliminar ítem \n3. Ver lista completa \n4. Salir \nSeleccione una opción: "))
 
     match opcion:
         case 1:
