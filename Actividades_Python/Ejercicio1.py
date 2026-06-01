@@ -1,6 +1,5 @@
 # # Ejercicio 1: Análisis de Calificaciones en una Lista
 def analizar_calificaciones(lista):
-
     suma = 0
 
     for nota in lista:
