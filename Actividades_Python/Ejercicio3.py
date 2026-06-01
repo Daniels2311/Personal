@@ -1,4 +1,5 @@
 #Ejercicio 3: Agenda de Contactos con Diccionario
+
 agenda = {}
 
 def agregar_contacto():

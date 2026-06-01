@@ -1,4 +1,5 @@
 # Ejercicio 5: Mini Sistema de Gestion de Inventario
+
 inventario = []
 
 def agregar_producto():

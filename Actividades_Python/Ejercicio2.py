@@ -1,4 +1,5 @@
 # #Ejercicio 2: Lista de Compras Interactiva
+
 lista_compras = []
 opcion = 0
 
