@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Tipografía elegante y romántica */
+}
+
+body {
+    overflow: hidden;
+    background-color: #020208;
+    color: #ffffff;
+}
+
+/* --- PANTALLA DE INICIO (Cubre toda la pantalla) --- */
+#pantalla-bienvenida {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #020208;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    text-align: center;
+}
+
+/* Clase para desvanecer y quitar la pantalla de bienvenida */
+#pantalla-bienvenida.desvanecer {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.1);
+}
+
+.contenido-bienvenida {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.titulo-intro {
+    font-size: 2.2rem;
+    letter-spacing: 6px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.frase-intro {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.frase-sub {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    color: #ff7597;
+    text-shadow: 0 0 10px rgba(255, 117, 151, 0.5);
+}
+
+/* Botón Explorar con estilo elegante */
+#btn-explorar {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    padding: 12px 35px;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+
+#btn-explorar:hover {
+    background: #ffffff;
+    color: #020208;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    border-color: #ffffff;
+}
+
+/* --- LIENZO 3D --- */
+#universo-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* Instrucciones flotantes */
+#instrucciones {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    pointer-events: none;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition: opacity 1s ease;
+}
+
+#instrucciones.oculto {
+    opacity: 0;
+}
+
+/* --- ESTILO DE LAS CARTAS (MODALES) --- */
+#modal-recuerdo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(2, 2, 8, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+#modal-recuerdo.modal-oculto {
+    display: none;
+    opacity: 0;
+}
+
+.modal-contenido {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    animation: zoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+#cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+}
+
+#cerrar-modal:hover {
+    color: #ff7597;
+}
+
+#modal-imagen {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#modal-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #ffb3c1;
+    letter-spacing: 1px;
+}
+
+#modal-descripcion {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
