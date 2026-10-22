@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro Universo ✨</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Importamos Three.js y OrbitControls para el movimiento de la cámara -->
+    <!-- Three.js y OrbitControls -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
 
-    <!-- 1. PANTALLA DE INICIO (Se desvanece al dar clic en Explorar) -->
+    <!-- REPRODUCTOR DE MÚSICA OCULTO CON BUCLE (LOOP) -->
+    <audio id="musica-fondo" src="musica/cancion.mp3" loop preload="auto"></audio>
+
+    <!-- 1. PANTALLA DE INICIO -->
     <div id="pantalla-bienvenida">
         <div class="contenido-bienvenida">
             <h1 class="titulo-intro">NUESTRO UNIVERSO</h1>
@@ -21,12 +24,12 @@
         </div>
     </div>
 
-    <!-- 2. LIENZO 3D (Se revela al explorar) -->
+    <!-- 2. LIENZO 3D -->
     <canvas id="universo-canvas"></canvas>
 
-    <!-- Letrero flotante de instrucciones en el universo -->
+    <!-- Letrero flotante de instrucciones -->
     <div id="instrucciones" class="oculto">
-        <p>Arrastra para girar, usa el zoom y haz clic en los mundos brillantes ✨</p>
+        <p>Arrastra para girar, usa el zoom y haz clic en cada uno de nuestros 12 meses juntos ✨</p>
     </div>
 
     <!-- 3. MODAL PARA TUS MENSAJES E IMÁGENES -->
@@ -39,7 +42,6 @@
         </div>
     </div>
 
-    <!-- Tu archivo de lógica -->
     <script src="script.js"></script>
 </body>
 </html>

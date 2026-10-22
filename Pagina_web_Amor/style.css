@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif; /* Tipografía elegante y romántica */
+    font-family: 'Georgia', serif;
 }
 
 body {
@@ -11,14 +11,14 @@ body {
     color: #ffffff;
 }
 
-/* --- PANTALLA DE INICIO (Cubre toda la pantalla) --- */
+/* --- PANTALLA DE INICIO --- */
 #pantalla-bienvenida {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #020208;
+    background: radial-gradient(circle at center, #0b0b1a 0%, #020208 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,6 @@ body {
     text-align: center;
 }
 
-/* Clase para desvanecer y quitar la pantalla de bienvenida */
 #pantalla-bienvenida.desvanecer {
     opacity: 0;
     pointer-events: none;
@@ -43,9 +42,9 @@ body {
     font-size: 2.2rem;
     letter-spacing: 6px;
     font-weight: 300;
-    margin-bottom: 40px;
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .frase-intro {
@@ -57,15 +56,14 @@ body {
 
 .frase-sub {
     font-size: 1.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #ff7597;
-    text-shadow: 0 0 10px rgba(255, 117, 151, 0.5);
+    text-shadow: 0 0 12px rgba(255, 117, 151, 0.6);
 }
 
-/* Botón Explorar con estilo elegante */
 #btn-explorar {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     color: #ffffff;
     padding: 12px 35px;
     font-size: 0.9rem;
@@ -78,7 +76,7 @@ body {
 #btn-explorar:hover {
     background: #ffffff;
     color: #020208;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
     border-color: #ffffff;
 }
 
@@ -92,7 +90,6 @@ body {
     z-index: 1;
 }
 
-/* Instrucciones flotantes */
 #instrucciones {
     position: absolute;
     bottom: 30px;
@@ -102,15 +99,18 @@ body {
     pointer-events: none;
     text-align: center;
     font-size: 0.9rem;
-    opacity: 0.7;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    color: #e0e0e0;
     transition: opacity 1s ease;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
 #instrucciones.oculto {
     opacity: 0;
 }
 
-/* --- ESTILO DE LAS CARTAS (MODALES) --- */
+/* --- MODAL --- */
 #modal-recuerdo {
     position: fixed;
     top: 0;
@@ -132,17 +132,17 @@ body {
 }
 
 .modal-contenido {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
-    border-radius: 25px;
+    border-radius: 20px;
     max-width: 450px;
     width: 90%;
     text-align: center;
     position: relative;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
     animation: zoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -157,7 +157,7 @@ body {
     right: 20px;
     font-size: 2rem;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
     transition: color 0.2s;
 }
 
@@ -169,7 +169,7 @@ body {
     width: 100%;
     max-height: 280px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
