@@ -210,20 +210,20 @@ function crearEtiquetaNumero(numero) {
     return sprite;
 }
 
-// --- CONFIGURACIÓN DE LOS 12 MESES ---
+// --- CONFIGURACIÓN DE LOS 12 MESES (CON TUS IMÁGENES .PNG) ---
 const recuerdosData = [
-    { mesNum: 1, radio: 1.6, colorBase: "#d81b60", colorDetalle: "#ff80ab", pos: { x: -16, y: 8, z: 10 }, tipo: "nebulosa", titulo: "Mes 1: El Comienzo", descripcion: "Aquí empezó nuestra increíble historia.", imagen: "imagenes/mes1.jpg" },
-    { mesNum: 2, radio: 1.8, colorBase: "#00897b", colorDetalle: "#80cbd3", pos: { x: 12, y: -6, z: 15 }, tipo: "particulas", titulo: "Mes 2: Primeras Risas", descripcion: "Descubriendo lo bien que la pasamos juntos.", imagen: "imagenes/mes2.jpg" },
-    { mesNum: 3, radio: 1.7, colorBase: "#8e24aa", colorDetalle: "#ea80fc", pos: { x: -8, y: -12, z: -8 }, tipo: "satelite", titulo: "Mes 3: Momentos Inolvidables", descripcion: "Cada lugar a tu lado es mágico.", imagen: "imagenes/mes3.jpg" },
-    { mesNum: 4, radio: 1.5, colorBase: "#00acc1", colorDetalle: "#80deea", pos: { x: 18, y: 10, z: -12 }, tipo: "anillo", titulo: "Mes 4: Detalles Especiales", descripcion: "Pequeños momentos que se quedan para siempre.", imagen: "imagenes/mes4.jpg" },
-    { mesNum: 5, radio: 1.3, colorBase: "#fdd835", colorDetalle: "#fff59d", pos: { x: -20, y: -4, z: -18 }, tipo: "nebulosa", titulo: "Mes 5: Creciendo Juntos", descripcion: "Un mes lleno de complicidad.", imagen: "imagenes/mes5.jpg" },
-    { mesNum: 6, radio: 2.0, colorBase: "#f4511e", colorDetalle: "#ffab91", pos: { x: 4, y: 14, z: 6 }, tipo: "satelite", titulo: "Mes 6: Medio Año", descripcion: "Medio año demostrándonos lo mucho que nos queremos.", imagen: "imagenes/mes6.jpg" },
-    { mesNum: 7, radio: 1.7, colorBase: "#5e35b1", colorDetalle: "#b388ff", pos: { x: 15, y: -10, z: 2 }, tipo: "particulas", titulo: "Mes 7: Nuevas Aventuras", descripcion: "Cada día es una nueva oportunidad para sonreír.", imagen: "imagenes/mes7.jpg" },
-    { mesNum: 8, radio: 1.9, colorBase: "#00bfa5", colorDetalle: "#a7ffeb", pos: { x: -12, y: 12, z: -22 }, tipo: "anillo", titulo: "Mes 8: Abrazo Cálido", descripcion: "Donde las palabras sobran.", imagen: "imagenes/mes8.jpg" },
-    { mesNum: 9, radio: 1.6, colorBase: "#e64a19", colorDetalle: "#ff9e80", pos: { x: 22, y: 2, z: -6 }, tipo: "nebulosa", titulo: "Mes 9: Magia Cósmica", descripcion: "Gracias por llenar mi mundo de alegría.", imagen: "imagenes/mes9.jpg" },
-    { mesNum: 10, radio: 2.2, colorBase: "#aa00ff", colorDetalle: "#f50057", pos: { x: -6, y: -8, z: 20 }, tipo: "anillo", titulo: "Mes 10: Mi Lugar Seguro", descripcion: "Contigo la vida se siente pacífica.", imagen: "imagenes/mes10.jpg" },
-    { mesNum: 11, radio: 1.6, colorBase: "#64dd17", colorDetalle: "#ccff90", pos: { x: -22, y: 6, z: 4 }, tipo: "satelite", titulo: "Mes 11: Casi un Año", descripcion: "Mirando todo lo hermoso que hemos recorrido.", imagen: "imagenes/mes11.jpg" },
-    { mesNum: 12, radio: 3.2, colorBase: "#d50000", colorDetalle: "#ff80ab", pos: { x: 0, y: 0, z: 0 }, tipo: "gran_sol", titulo: "¡Un Año Juntos! ❤️", descripcion: "365 días amándote. ¡Y esto apenas empieza!", imagen: "imagenes/mes12.jpg" }
+    { mesNum: 1, radio: 1.6, colorBase: "#d81b60", colorDetalle: "#ff80ab", pos: { x: -16, y: 8, z: 10 }, tipo: "nebulosa", titulo: "Mes 1: El comienzo de nuestro amor", descripcion: "Aquí empezó nuestra historia de amor.", imagen: "imagenes/1.png" },
+    { mesNum: 2, radio: 1.8, colorBase: "#00897b", colorDetalle: "#80cbd3", pos: { x: 12, y: -6, z: 15 }, tipo: "particulas", titulo: "Mes 2: Nuestros primeros besos", descripcion: "Descubriendo lo bien que la pasamos juntos.", imagen: "imagenes/2.png" },
+    { mesNum: 3, radio: 1.7, colorBase: "#8e24aa", colorDetalle: "#ea80fc", pos: { x: -8, y: -12, z: -8 }, tipo: "satelite", titulo: "Mes 3: Tu y yo juntos ", descripcion: "Cada lugar a tu lado es mágico.", imagen: "imagenes/3.png" },
+    { mesNum: 4, radio: 1.5, colorBase: "#00acc1", colorDetalle: "#80deea", pos: { x: 18, y: 10, z: -12 }, tipo: "anillo", titulo: "Mes 4: Salidas Especiales", descripcion: "Pequeños momentos que se quedan para siempre.", imagen: "imagenes/4.png" },
+    { mesNum: 5, radio: 1.3, colorBase: "#fdd835", colorDetalle: "#fff59d", pos: { x: -20, y: -4, z: -18 }, tipo: "nebulosa", titulo: "Mes 5: Creciendo Juntos", descripcion: "Un mes lleno de amor y ternura.", imagen: "imagenes/5.png" },
+    { mesNum: 6, radio: 2.0, colorBase: "#f4511e", colorDetalle: "#ffab91", pos: { x: 4, y: 14, z: 6 }, tipo: "satelite", titulo: "Mes 6: Medio Año", descripcion: "Medio año demostrándonos lo mucho que nos amamos.", imagen: "imagenes/6.png" },
+    { mesNum: 7, radio: 1.7, colorBase: "#5e35b1", colorDetalle: "#b388ff", pos: { x: 15, y: -10, z: 2 }, tipo: "particulas", titulo: "Mes 7: Nuevas Aventuras", descripcion: "Cada día es una nueva oportunidad para sonreír.", imagen: "imagenes/7.png" },
+    { mesNum: 8, radio: 1.9, colorBase: "#00bfa5", colorDetalle: "#a7ffeb", pos: { x: -12, y: 12, z: -22 }, tipo: "anillo", titulo: "Mes 8: Abrazo Cálido", descripcion: "Donde un abrazo vale mas que mil palabras.", imagen: "imagenes/8.png" },
+    { mesNum: 9, radio: 1.6, colorBase: "#e64a19", colorDetalle: "#ff9e80", pos: { x: 22, y: 2, z: -6 }, tipo: "nebulosa", titulo: "Mes 9: Nuestros lazos se fortalecen", descripcion: "Gracias por llenar mi mundo de alegría.", imagen: "imagenes/9.png" },
+    { mesNum: 10, radio: 2.2, colorBase: "#aa00ff", colorDetalle: "#f50057", pos: { x: -6, y: -8, z: 20 }, tipo: "anillo", titulo: "Mes 10: Mi Lugar Seguro", descripcion: "Contigo la vida se siente como una aventura.", imagen: "imagenes/10.png" },
+    { mesNum: 11, radio: 1.6, colorBase: "#64dd17", colorDetalle: "#ccff90", pos: { x: -22, y: 6, z: 4 }, tipo: "satelite", titulo: "Mes 11: Casi un Año", descripcion: "Mirando todo lo hermoso que hemos recorrido.", imagen: "imagenes/11.png" },
+    { mesNum: 12, radio: 3.2, colorBase: "#d50000", colorDetalle: "#ff80ab", pos: { x: 0, y: 0, z: 0 }, tipo: "gran_sol", titulo: "¡Un Año Juntos! ❤️", descripcion: "365 días amándote. ¡Y esto apenas empieza!", imagen: "imagenes/12.png" }
 ];
 
 const esferasRecuerdos = [];
@@ -401,7 +401,6 @@ const instrucciones = document.querySelector('#instrucciones');
 const musicaFondo = document.querySelector('#musica-fondo');
 
 btnExplorar.addEventListener('click', () => {
-    // Reprodcir música de fondo al presionar Explorar
     if (musicaFondo) {
         musicaFondo.play().catch(e => console.log("Permiso de audio requerido:", e));
     }
